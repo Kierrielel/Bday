@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <audio src="./Bday.mp3" autoplay></audio>
+        <audio src="./Bday.mp3" autoplay id="background-music"></audio>
         <section class="ewan-ko">
             <h1>404 ERROR</h1>
             <h2>May tanga</h2>
@@ -71,9 +71,13 @@
             var audio = document.querySelector('audio');
             audio.play();
             }, { once: true });
+
+            var audio = document.getElementById("background-music");
+            audio.volume = 0.3;
         </script>
     </body>
 </html>
+
 
 
 
