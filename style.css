@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+.ewan-ko {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: red;
+}
+.ewan-ko h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.scroll-hint {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #666;
+    animation: bounce 2s infinite;
+}
+.mga-mukha {
+    padding: 50px 20px;
+    background-color: #222;
+}
+.memory-card {
+    margin-bottom: 80px;
+}
+.memory-card img,
+video {
+    width: 90%;
+    max-width: 500px;
+    border: 10px solid white;
+    border-bottom: 30px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
